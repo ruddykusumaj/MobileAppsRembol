@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pemesanan">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Pemesanan Mobil"
+            android:textColor="#10375D"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:gravity="center_horizontal"
+            android:text="silahkan pesan mobil melalui pilihan dibawah" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilihan Mobil yang Tersedia :" />
+
+        <Spinner
+            android:id="@+id/spinnerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Alamat"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtTlpn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="No.Telepon"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txtTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan Tanggal Pesan"
+            android:focusable="false"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harga Sewa :" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="30dp"
+                android:text="Rp. " />
+
+            <TextView
+                android:id="@+id/txtHarga"
+                android:layout_marginLeft="5px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="30dp"
+                android:text="Harga" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iduser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="iduser"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/idList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="idList"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttonpsn"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6DB8BB"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pesan" />
+
+    </LinearLayout>
+
+</RelativeLayout>
