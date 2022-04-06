@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textColor="#05647a"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Rfullname"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Fullname"
+                android:drawableRight="@drawable/ic_username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Rusername"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Username"
+                android:drawableRight="@drawable/ic_baseline_username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Email"
+                android:drawableRight="@drawable/ic_email"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Rpassword"
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableRight="@drawable/ic_baseline_lock_24"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Password"
+                android:inputType="textPersonName|textPassword" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:backgroundTint="#10375d"
+
+                />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="Sudah Punya Akun?\nclick disini!"
+                android:textStyle="bold"
+                android:textColor="#05647a" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
